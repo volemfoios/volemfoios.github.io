@@ -2,7 +2,8 @@
 
 // Declare app level module which depends on views, and components
 angular.module('myApp', [
-  'ngRoute'
+  'ngRoute',
+  'ui.bootstrap'
 ]).
 config(['$routeProvider', function($routeProvider) {
   $routeProvider
@@ -19,4 +20,4 @@ config(['$routeProvider', function($routeProvider) {
     templateUrl: 'templates/multimedia.html',
   })
   .otherwise({redirectTo: '/'});
-}])
+}]);

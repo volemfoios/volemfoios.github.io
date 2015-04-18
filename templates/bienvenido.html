@@ -3,6 +3,20 @@
     <span><h1></h1></span>
     <p><strong>Bienvenido!</strong> Estás en la web de Volem Foios</p>
   </div>
+  <div ng-controller="CarouselDemoCtrl">
+    <div style="height: 305px">
+      <carousel interval="5000">
+        <slide ng-repeat="slide in slides" active="slide.active">
+          <img ng-src="{{slide.image}}" style="margin:auto;">
+          <div class="carousel-caption">
+            <h4>Idea {{$index + 1}}</h4>
+            <p>{{slide.text}}</p>
+          </div>
+        </slide>
+      </carousel>
+    </div>
+  </div>
+  <!--
   <div class="asamblea">
     <div class="cover">
       <div class="row">
@@ -15,4 +29,5 @@
       </div>
     </div>
   </div>
+  -->
 </div>

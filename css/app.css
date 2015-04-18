@@ -109,3 +109,6 @@ code {
   color: #EAEAEA;
   line-height: 1.4em;
 }
+
+/* angular ui */
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
