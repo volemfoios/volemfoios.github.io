@@ -77,3 +77,35 @@ code {
 .navbar-brand {
   margin-top: -10px;
 }
+
+.asamblea {
+  background-image: url('../images/asamblea.jpg') ;
+  background-size: 100% auto;
+  background-repeat: repeat-y;
+  color: #FFFFFF;
+}
+
+.cover {
+   color: #fff;
+   background: rgba(0, 0, 0, 0.6);
+}
+
+.morado {
+  background-color: #612d62;
+  color: #FFF;
+}
+
+.gris{
+  background-color: #2C2F36;
+  color: #60676F;
+}
+
+.gris > p{
+  color: #60676F;
+}
+
+.mini-txt{
+  font-size: 1.4em;
+  color: #EAEAEA;
+  line-height: 1.4em;
+}
