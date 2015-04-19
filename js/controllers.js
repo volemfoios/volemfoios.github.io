@@ -1,12 +1,21 @@
 angular.module('myApp')
-.controller('HeaderController', function ($scope,$location) { 
+.controller('HeaderController', function ($scope,$location,$translate) { 
+    
+    $scope.selectedLanguage = 'es';
+
     $scope.isActive = function (viewLocation) { 
         return viewLocation === $location.path();
+    };
+
+    $scope.changeLanguage = function (key) {
+      $scope.selectedLanguage = key;
+      $translate.use(key);
     };
 })
 .controller('CarouselDemoCtrl', function ($scope) {
   $scope.myInterval = 5000;
   var slides = $scope.slides = [];
+
   $scope.addSlide = function() {
     var newWidth = 400 + slides.length + 1;
     slides.push({
@@ -15,6 +24,7 @@ angular.module('myApp')
         ['Estamos con la gente del pueblo', 'Transparencia total', 'Otra explicación de la idea'][slides.length % 3]
     });
   }
+
   for (var i=0; i<3 ;i++) {
     $scope.addSlide();
   }
