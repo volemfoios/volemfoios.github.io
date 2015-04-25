@@ -34,6 +34,10 @@ body {
   color: #777;
 }
 
+.panel-body p {
+  color: #777;
+}
+
 /* Custom page CSS
 -------------------------------------------------- */
 /* Not required for template or sticky footer method. */
