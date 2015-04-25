@@ -12,7 +12,8 @@ angular.module('myApp')
       $translate.use(key);
     };
 })
-.controller('CarouselDemoCtrl', function ($scope) {
+.controller('CarouselDemoCtrl', function ($scope,$timeout) {
+
   $scope.myInterval = 5000;
   var slides = $scope.slides = [];
 
@@ -28,4 +29,7 @@ angular.module('myApp')
   for (var i=0; i<3 ;i++) {
     $scope.addSlide();
   }
+
+  // hack to reload twitter feed
+  $timeout = twttr.widgets.load();
 });

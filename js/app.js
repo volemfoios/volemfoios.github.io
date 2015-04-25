@@ -14,6 +14,9 @@ config(['$routeProvider', function($routeProvider) {
   .when('/programa', {
     templateUrl: 'templates/programa.html',
   })
+  .when('/compromisos', {
+    templateUrl: 'templates/compromisos.html',
+  })
   .when('/quienes', {
     templateUrl: 'templates/quienes.html',
   })

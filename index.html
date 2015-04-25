@@ -18,7 +18,7 @@
   <link rel='shortcut icon' href='favicon.ico'>
 </head>
 <body ng-controller="HeaderController">
-  <nav class="navbar navbar-default navbar-fixed-top"  >
+  <nav class="navbar navbar-default navbar-fixed-top" >
     <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" ng-init="isCollapsed = true" ng-click="isCollapsed = !isCollapsed" >
@@ -29,16 +29,22 @@
         </button>
         <a class="navbar-brand" href="#/view1"><img alt="Brand" src="images/logo_min.png"></a>
       </div>
-      <div id="navbar" class="navbar-collapse" ng-class="{collapse: isCollapsed}">
+      <div id="navbar" class="navbar-collapse" ng-class="{collapse: isCollapsed}" ng-cloak>
         <ul class="nav navbar-nav">
           <li ng-class="{ active: isActive('/')}" ng-click="isCollapsed = !isCollapsed"><a href="#/bienvenido">{{'BIENVENIDO' | translate}}</a></li>
-          <li ng-class="{ active: isActive('/programa')}" ng-click="isCollapsed = !isCollapsed"><a href="#/programa">{{'PROGRAMA' | translate}}</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" ng-class="{ active: isActive('/programa') || isActive('/programa')}">{{'PROGRAMA' | translate}} <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li ng-click="isCollapsed = !isCollapsed"><a href="#/programa">{{'PROGRAMA' | translate}}</a></li>
+              <li ng-class="{ active: isActive('/compromisos')}" ng-click="isCollapsed = !isCollapsed"><a href="#/compromisos">{{'COMPROMISOS' | translate}}</a></li>
+            </ul>
+          </li>
           <li ng-class="{ active: isActive('/quienes')}" ng-click="isCollapsed = !isCollapsed"><a href="#/quienes">{{'CANDIDATOS' | translate}}</a></li>
           <li ng-class="{ active: isActive('/multimedia')}" ng-click="isCollapsed = !isCollapsed"><a href="#/multimedia">Multimedia</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
           <li ng-show="selectedLanguage == 'va'" ng-click="changeLanguage('es');isCollapsed = !isCollapsed;"><a>Castellano</a></li>
-          <li ng-show="selectedLanguage == 'es'" ng-click="changeLanguage('va');isCollapsed = !isCollapsed;"><a>Valenciá</a></li>
+          <li ng-show="selectedLanguage == 'es'" ng-click="changeLanguage('va');isCollapsed = !isCollapsed;"><a>Valencià</a></li>
           <li>
             <a class="nopadding" href="https://twitter.com/volemFoios" ><i class="fa fa-twitter-square fa-3x"></i></a>
           </li>
@@ -53,7 +59,7 @@
   <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
-  <div ng-class="{ container: !isActive('/')}">
+  <div class="container">
     <div ng-view ></div>
   </div>
   
