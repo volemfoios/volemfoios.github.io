@@ -85,11 +85,13 @@ code {
   background-size: 100% auto;
   background-repeat: repeat-y;
   color: #FFFFFF;
+  min-height: 300px;
 }
 
 .cover {
    color: #fff;
    background: rgba(0, 0, 0, 0.6);
+   min-height: 300px;
 }
 
 .morado {
