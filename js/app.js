@@ -6,7 +6,7 @@ angular.module('myApp', [
   'ui.bootstrap',
   'pascalprecht.translate'
 ]).
-config(['$routeProvider', function($routeProvider) {
+config(['$routeProvider','$translate', function($routeProvider,$translate) {
   $routeProvider
   .when('/', {
     templateUrl: 'templates/bienvenido.html',
@@ -34,4 +34,6 @@ config(['$routeProvider', function($routeProvider) {
     templateUrl: 'templates/multimedia.html',
   })
   .otherwise({redirectTo: '/'});
+
+  $translate.preferredLanguage('es')
 }]);
