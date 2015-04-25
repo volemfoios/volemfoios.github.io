@@ -14,7 +14,11 @@ angular.module('myApp')
 })
 .controller('WelcomeController', function ($scope,$timeout) {
   // hack to reload twitter feed
-  $timeout = twttr.widgets.load();
+  $timeout(function() {
+    if(typeof twttr !== 'undefined'){
+      twttr.widgets.load();
+    }
+  });
 })
 .controller('CandidatosController', function ($scope,CANDIDATOS) {
   $scope.candidatos = CANDIDATOS;
