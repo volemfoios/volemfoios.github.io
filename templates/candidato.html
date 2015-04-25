@@ -1,0 +1,27 @@
+<div class="candidato">
+  <h1 class="page-header">{{candidato.name}}</h1>
+  <div class="panel">
+    <div class="media">
+      <div class="media-left">
+        <a href="#">
+          <img class="media-object img-rounded" ng-src="images/candidatos/{{candidato.image}}" alt="{{candidato.name}}">
+        </a>
+        <hr>
+        <div class="panel">
+          <a class="btn btn-block btn-primary" href="http://twitter.com/{{candidato.twitter}}" >
+            <i class="fa fa-twitter-square fa-2x"></i>
+            <span >@{{candidato.twitter}}</span>
+          </a>
+        </div>
+      </div>
+      <div class="media-body">
+        <h4 class="media-heading"></h4>
+        <p ng-repeat="parrafo in candidato.bio">{{parrafo}}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+

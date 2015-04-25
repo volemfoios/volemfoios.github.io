@@ -20,6 +20,16 @@ config(['$routeProvider', function($routeProvider) {
   .when('/quienes', {
     templateUrl: 'templates/quienes.html',
   })
+  .when('/contacto', {
+    templateUrl: 'templates/contacto.html',
+  })
+  .when('/gracias', {
+    templateUrl: 'templates/gracias.html',
+  })
+  .when('/candidato/:candidatoID', {
+    templateUrl: 'templates/candidato.html',
+    controller: 'CandidatoController'
+  })
   .when('/multimedia', {
     templateUrl: 'templates/multimedia.html',
   })

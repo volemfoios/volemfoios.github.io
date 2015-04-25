@@ -1,5 +1,9 @@
 /* Sticky footer styles
 -------------------------------------------------- */
+* {
+  font-family: 'Anaheim', sans-serif;
+}
+
 html {
   position: relative;
   min-height: 100%;
@@ -17,6 +21,17 @@ body {
   /* Set the fixed height of the footer here */
   height: 60px;
   background-color: #f5f5f5;
+}
+
+/* Active dropdown override */
+.dropdown .active > a {
+  color: #555 !important;
+  background: #e7e7e7 !important;
+}
+
+.candidato .panel {
+  background-color: #F6F6F6;
+  color: #777;
 }
 
 
@@ -80,14 +95,6 @@ code {
   margin-top: -10px;
 }
 
-.asamblea {
-  background-image: url('../images/slide-01.jpg') ;
-  background-size: 100% auto;
-  background-repeat: repeat-y;
-  color: #FFFFFF;
-  min-height: 300px;
-}
-
 .cover {
    color: #fff;
    background: rgba(0, 0, 0, 0.6);
@@ -112,6 +119,14 @@ code {
   font-size: 1.4em;
   color: #EAEAEA;
   line-height: 1.4em;
+}
+
+.carousel-caption {
+    top: 10%;
+    bottom: auto;
+    text-align: left;
+    left: 5%;
+    font-family: 'Gotham Bold', sans-serif;
 }
 
 /* angular ui */
