@@ -51,7 +51,7 @@ angular.module('myApp').constant('CANDIDATOS',
     image:"adolfo.jpg"
   },
   {
-    name:"Blaí Pérez",
+    name:"Blai Pérez",
     url:"blai",
     image:"blai.jpg"
   },
