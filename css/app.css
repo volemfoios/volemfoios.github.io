@@ -98,28 +98,5 @@ code {
   margin-top: -10px;
 }
 
-.navbar {
-  font-family: 'Gotham Bold', sans-serif !important;
-}
-
-.cover {
-   color: #fff;
-   background: rgba(0, 0, 0, 0.6);
-   min-height: 300px;
-}
-
-.morado {
-  background-color: #612d62;
-  color: #FFF;
-}
-
-.carousel-caption {
-    top: 10%;
-    bottom: auto;
-    text-align: left;
-    left: 5%;
-    font-family: 'Gotham Bold', sans-serif;
-}
-
 /* angular ui */
 .nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
