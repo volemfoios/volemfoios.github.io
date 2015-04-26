@@ -7,7 +7,7 @@
           <img class="img-responsive img-rounded center-block" ng-src="images/candidatos/{{candidato.image}}" alt="{{candidato.name}}">
         </a>
         <hr>
-        <div class="panel">
+        <div class="panel" ng-show="candidato.twitter">
           <a class="btn btn-block btn-social btn-twitter" href="http://twitter.com/{{candidato.twitter}}" >
             <i class="fa fa-twitter"></i>@{{candidato.twitter}}
           </a>
