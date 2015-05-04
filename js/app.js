@@ -16,6 +16,7 @@ config(['$routeProvider', function($routeProvider) {
   })
   .when('/compromisos', {
     templateUrl: 'templates/compromisos.html',
+    controller: 'CompromisosController'
   })
   .when('/quienes', {
     templateUrl: 'templates/quienes.html',

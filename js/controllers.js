@@ -31,4 +31,15 @@ angular.module('myApp')
     error(function(data, status, headers, config) {
       console.log('Error getting candidato');
     });         
+})
+.controller('CompromisosController', function ($scope,$translate,$http) {
+  var uri = 'compromisos_' + $translate.use();
+
+  $http.get('/data/' + uri + '.json').
+    success(function(data, status, headers, config) {
+      $scope.compromisos = data;
+    }).
+    error(function(data, status, headers, config) {
+      console.log('Error getting compromisos');
+    }); 
 });

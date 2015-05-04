@@ -21,7 +21,8 @@ angular.module('myApp')
     VOLVER_INICIO: 'Volver a la página de inicio',
     ESTOS_CANDIDATOS: 'Estos son los y las candidatas elegidos en las primarias abiertas para el ayuntamiento de Foios',
     PROGRAMA_ELECTORAL: 'Programa electoral',
-    PROXIMAMENTE: 'Próximamente...'
+    PROXIMAMENTE: 'Próximamente...',
+    COMPROMISOS_ADQUIRIDOS: 'Compromisos adquiridos con la ciudadanía'
   });
   $translateProvider.translations('va', {
     BIENVENIDO: 'BENVINGUTS/DES',
@@ -44,7 +45,8 @@ angular.module('myApp')
     VOLVER_INICIO: 'Tornar a la pàgina d\'inici',
     ESTOS_CANDIDATOS: 'Estos són els i les candidates triats en primàries obertes per a l\'ajuntament de Foios',
     PROGRAMA_ELECTORAL: 'Programa electoral',
-    PROXIMAMENTE: 'Pròximament...'
+    PROXIMAMENTE: 'Pròximament...',
+    COMPROMISOS_ADQUIRIDOS: 'Compromisos adquiridos con la ciudadanía'
   });
   $translateProvider.preferredLanguage('es');
 });
