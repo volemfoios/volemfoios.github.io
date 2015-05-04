@@ -3,7 +3,7 @@ angular.module('myApp')
   $translateProvider.translations('es', {
     BIENVENIDO: 'BIENVENID@',
     PROGRAMA: 'PROGRAMA',
-    PROGRAMA_CIUDADANO: 'PROGRAMA DE LA CIUDADANIA',
+    PROGRAMA_CIUDADANO: 'PROGRAMA PARTICIPATIVO',
     COMPROMISOS: 'COMPROMISOS',
     CANDIDATOS: 'CANDIDAT@S',
     CANDIDATOS_LOW: 'Candidat@s',
@@ -26,7 +26,7 @@ angular.module('myApp')
   $translateProvider.translations('va', {
     BIENVENIDO: 'BENVINGUTS/DES',
     PROGRAMA: 'PROGRAMA',
-    PROGRAMA_CIUDADANO: 'PROGRAMA DE LA CIUTADANIA',
+    PROGRAMA_CIUDADANO: 'PROGRAMA PARTICIPATIU',
     COMPROMISOS: 'COMPROMISOS',
     CANDIDATOS: 'CANDIDATS/ES',
     CANDIDATOS_LOW: 'Candidats/es',
@@ -34,15 +34,15 @@ angular.module('myApp')
     COMPROMISOS :'21 COMPROMISOS',
     CONTACTO : 'CONTACTO',
     CONTACTO_LOW : 'Contacto',
-    DUDAS: 'Envia'ns els teus dubtes, propostes o suggerències per mitjà d'este formulari.',
+    DUDAS: 'Envia\'ns els teus dubtes, propostes o suggerències per mitjà d\'este formulari.',
     NOMBRE: 'Nom',
     EMAIL: 'Email',
     MENSAJE: 'Missatge',
     ENVIAR: 'Enviar',
     MUCHAS_GRACIAS: '¡Moltes gràcies!',
-    ENVIADO_CORRECTAMENTE: 'El teu missatge s'ha enviat correctament.',
-    VOLVER_INICIO: 'Tornar a la pàgina d'inici',
-    ESTOS_CANDIDATOS: 'Estos són els i les candidates triats en primàries obertes per a l'ajuntament de Foios,
+    ENVIADO_CORRECTAMENTE: 'El teu missatge s\'ha enviat correctament.',
+    VOLVER_INICIO: 'Tornar a la pàgina d\'inici',
+    ESTOS_CANDIDATOS: 'Estos són els i les candidates triats en primàries obertes per a l\'ajuntament de Foios',
     PROGRAMA_ELECTORAL: 'Programa electoral',
     PROXIMAMENTE: 'Pròximament...'
   });

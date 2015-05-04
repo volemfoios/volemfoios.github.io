@@ -59,6 +59,11 @@ angular.module('myApp').constant('CANDIDATOS',
     name:"Concha Montesinos",
     url:"concha",
     image:"concha.jpg"
+  },
+  {
+    name:"Xon Berbegal",
+    url:"xonin",
+    image:"xonin.jpg"
   }
 ]
  );
