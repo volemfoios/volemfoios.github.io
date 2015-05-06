@@ -20,6 +20,11 @@ angular.module('myApp')
     }
   });
 })
+.controller('ProgramaController', function ($scope) {
+  $scope.pdfUrl = '/docs/programa_volem_foios_es.pdf';
+  $scope.loading = 'Cargando';
+  $scope.pdfName = 'Programa'
+})
 .controller('CandidatosController', function ($scope,CANDIDATOS) {
   $scope.candidatos = CANDIDATOS;
 })
@@ -57,12 +62,35 @@ angular.module('myApp')
       });
   }
 })
-.controller('MultimediaController', function ($scope,$http) {
+.controller('MultimediaController', function ($scope, $http, $modal) {
   $http.get('/data/multimedia.json').
     success(function(data, status, headers, config) {
       $scope.multimedia = data;
     }).
     error(function(data, status, headers, config) {
       console.log('Error getting multimedia');
-    });         
+    }
+  );
+
+  $scope.open = function(video) {
+    var modalInstance = $modal.open({
+      animation: true,
+      templateUrl: 'video.html',
+      size: 'lg',
+      controller: 'ModalInstanceCtrl',
+      resolve: {
+        video: function () {
+          return video;
+        }
+      }
+    });
+  };
+}).controller('ModalInstanceCtrl', function ($scope, $modalInstance, video) {
+
+  $scope.video = video;
+ 
+  $scope.close = function () {
+    $modalInstance.close();
+  };
+
 });

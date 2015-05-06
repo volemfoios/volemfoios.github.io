@@ -38,6 +38,15 @@ body {
   color: #777;
 }
 
+.modal-body {
+  color: #777;
+}
+
+.modal-dialog {
+  background-color: #F6F6F6;
+  color: #777;
+}
+
 /* Custom page CSS
 -------------------------------------------------- */
 /* Not required for template or sticky footer method. */

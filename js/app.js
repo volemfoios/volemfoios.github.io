@@ -4,7 +4,9 @@
 angular.module('myApp', [
   'ngRoute',
   'ui.bootstrap',
-  'pascalprecht.translate'
+  'pascalprecht.translate',
+  'youtube-embed',
+  'pdf'
 ]).
 config(['$routeProvider', function($routeProvider) {
   $routeProvider
@@ -13,6 +15,7 @@ config(['$routeProvider', function($routeProvider) {
   })
   .when('/programa', {
     templateUrl: 'templates/programa.html',
+    controller: 'ProgramaController'
   })
   .when('/compromisos', {
     templateUrl: 'templates/compromisos.html',
