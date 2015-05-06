@@ -33,6 +33,7 @@ config(['$routeProvider', function($routeProvider) {
   })
   .when('/multimedia', {
     templateUrl: 'templates/multimedia.html',
+    controller: 'MultimediaController'
   })
   .otherwise({redirectTo: '/'});
 

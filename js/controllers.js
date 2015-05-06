@@ -33,13 +33,36 @@ angular.module('myApp')
     });         
 })
 .controller('CompromisosController', function ($scope,$translate,$http) {
-  var uri = 'compromisos_' + $translate.use();
+  
+  $scope.language = $translate.use();
 
-  $http.get('/data/' + uri + '.json').
+  setLanguage($translate.use());
+
+  $scope.$watch(
+    function() { 
+      return $translate.use(); 
+    }, function(newValue, oldValue) {
+      setLanguage(newValue);
+  });
+
+  function setLanguage(lang){
+    var uri = 'compromisos_' + lang;
+
+    $http.get('/data/' + uri + '.json').
+      success(function(data, status, headers, config) {
+        $scope.compromisos = data;
+      }).
+      error(function(data, status, headers, config) {
+        console.log('Error getting compromisos');
+      });
+  }
+})
+.controller('MultimediaController', function ($scope,$http) {
+  $http.get('/data/multimedia.json').
     success(function(data, status, headers, config) {
-      $scope.compromisos = data;
+      $scope.multimedia = data;
     }).
     error(function(data, status, headers, config) {
-      console.log('Error getting compromisos');
-    }); 
+      console.log('Error getting multimedia');
+    });         
 });
