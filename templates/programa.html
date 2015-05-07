@@ -1,8 +1,22 @@
 <div class="page-header">
   <h1>{{'PROGRAMA_ELECTORAL' | translate}}</h1>
 </div>
+<nav ng-class="getNavStyle(scroll)" class="text-center">
+  <button class="btn" ng-click="goPrevious()">
+    <span class="glyphicon glyphicon-step-backward"></span>
+  </button>
+  <button class="btn" ng-click="goNext()">
+    <span class="glyphicon glyphicon-step-forward"></span>
+  </button>
+  <button class="btn" ng-click="zoomIn()">
+    <span class="glyphicon glyphicon-zoom-in"></span>
+  </button>
+  <button class="btn" ng-click="zoomOut()">
+    <span class="glyphicon glyphicon-zoom-out"></span>
+  </button>
+</nav>
 <div>
-  <div class="wrapper" >
-    <ng-pdf template-url="/templates/viewer.html"></ng-pdf>
+  <div class="wrapper text-center" >
+    <pdf-viewer delegate-handle="pdf-id" scale="1"></pdf-viewer>
   </div>
 </div>

@@ -20,10 +20,36 @@ angular.module('myApp')
     }
   });
 })
-.controller('ProgramaController', function ($scope) {
-  $scope.pdfUrl = '/docs/programa_volem_foios_es.pdf';
-  $scope.loading = 'Cargando';
-  $scope.pdfName = 'Programa'
+.controller('ProgramaController', function ($scope, $translate, pdfDelegate) {
+
+  $scope.$watch(
+    function() { 
+      return $translate.use(); 
+    }, function(newValue, oldValue) {
+      $scope.setLanguage(newValue);
+  });
+
+  $scope.setLanguage = function(lang){
+    pdfDelegate.$getByHandle('pdf-id').load('/docs/programa_volem_foios_'+lang+'.pdf');
+  };
+
+  $scope.goPrevious = function(){
+    pdfDelegate.prev();
+  }
+
+  $scope.goNext = function(){
+    pdfDelegate.next();
+  }
+
+  $scope.zoomIn = function(){
+    pdfDelegate.zoomIn();
+  }
+
+  $scope.zoomOut = function(){
+    pdfDelegate.zoomOut();
+  }
+
+  $scope.setLanguage($translate.use());
 })
 .controller('CandidatosController', function ($scope,CANDIDATOS) {
   $scope.candidatos = CANDIDATOS;

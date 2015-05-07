@@ -7,8 +7,8 @@ angular.module('myApp')
     COMPROMISOS: 'COMPROMISOS',
     CANDIDATOS: 'CANDIDAT@S',
     CANDIDATOS_LOW: 'Candidat@s',
-    MULTIMEDIA: 'MULTIMEDIA',
-    MULTIMEDIA_LOW: 'Multimedia',
+    MULTIMEDIA: 'VIDEOS',
+    MULTIMEDIA_LOW: 'Videos',
     COMPROMISOS :'21 COMPROMISOS',
     CONTACTO : 'CONTACTO',
     CONTACTO_LOW : 'Contacto',
@@ -21,7 +21,7 @@ angular.module('myApp')
     ENVIADO_CORRECTAMENTE: 'Tu mensaje se ha enviado correctamente.',
     VOLVER_INICIO: 'Volver a la página de inicio',
     ESTOS_CANDIDATOS: 'Estos son los y las candidatas elegidos en las primarias abiertas para el ayuntamiento de Foios',
-    PROGRAMA_ELECTORAL: 'Programa electoral',
+    PROGRAMA_ELECTORAL: 'Programa participativo',
     PROXIMAMENTE: 'Próximamente...',
     COMPROMISOS_ADQUIRIDOS: 'Compromisos'
   });
@@ -32,8 +32,8 @@ angular.module('myApp')
     COMPROMISOS: 'COMPROMISOS',
     CANDIDATOS: 'CANDIDATS/ES',
     CANDIDATOS_LOW: 'Candidats/es',
-    MULTIMEDIA: 'MULTIMEDIA',
-    MULTIMEDIA_LOW: 'Multimedia',
+    MULTIMEDIA: 'VIDEOS',
+    MULTIMEDIA_LOW: 'Videos',
     COMPROMISOS :'21 COMPROMISOS',
     CONTACTO : 'CONTACTE',
     CONTACTO_LOW : 'Contacte',
@@ -46,7 +46,7 @@ angular.module('myApp')
     ENVIADO_CORRECTAMENTE: 'El teu missatge s\'ha enviat correctament.',
     VOLVER_INICIO: 'Tornar a la pàgina d\'inici',
     ESTOS_CANDIDATOS: 'Estos són els i les candidates triades en primàries obertes per a l\'ajuntament de Foios',
-    PROGRAMA_ELECTORAL: 'Programa electoral',
+    PROGRAMA_ELECTORAL: 'Programa participatiu',
     PROXIMAMENTE: 'Pròximament...',
     COMPROMISOS_ADQUIRIDOS: 'Compromisos'
   });
