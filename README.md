@@ -1,6 +1,6 @@
 # Volem Foios
 
-Esta página ha sido desarrollada por [Eugenio Cuevas Pozuelo](http://codepioneer.wordpress.com) y es 100% opensource bajo licencia [MIT].
+Esta página ha sido desarrollada por [Eugenio Cuevas](http://codepioneer.wordpress.com) y es 100% opensource bajo licencia [MIT].
 
 
 [codepioneer]: http://codepioneer.wordpress.com
