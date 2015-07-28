@@ -30,8 +30,7 @@ angular.module('myApp')
     NOMBRE_LOW: 'Nombre',
     ENLACE_LOW: 'Enlace',
     PROGRAMA_GOBIERNO: 'Programa de gobierno',
-    GASTOS: 'Gastos',
-    GASTOS_EXCEL: 'Gastos Campaña'
+    GASTOS: 'Gastos Campaña'
   });
   $translateProvider.translations('va', {
     BIENVENIDO: 'BENVINGUTS/DES',
@@ -63,8 +62,7 @@ angular.module('myApp')
     NOMBRE_LOW: 'Nom',
     ENLACE_LOW: 'Enllaç',
     PROGRAMA_GOBIERNO: 'Programa de Govern',
-    GASTOS: 'Despeses Campanya',
-    GASTOS_EXCEL: 'Despeses excel'
+    GASTOS: 'Despeses Campanya'
   });
   $translateProvider.preferredLanguage('es');
 });
