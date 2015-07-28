@@ -27,6 +27,9 @@ config(['$routeProvider', function($routeProvider) {
   .when('/contacto', {
     templateUrl: 'templates/contacto.html',
   })
+  .when('/documentos', {
+    templateUrl: 'templates/documentos.html',
+  })
   .when('/gracias', {
     templateUrl: 'templates/gracias.html',
   })

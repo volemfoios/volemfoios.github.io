@@ -20,6 +20,20 @@ angular.module('myApp')
     }
   });
 })
+.controller('DocumentosController', function ($scope, $translate) {
+  $scope.$watch(
+    function() { 
+      return $translate.use(); 
+    }, function(newValue, oldValue) {
+      $scope.setLanguage(newValue);
+  });
+
+  $scope.setLanguage = function(lang){
+    $scope.language = lang;
+  };
+
+  $scope.setLanguage($translate.use());
+})
 .controller('ProgramaController', function ($scope, $translate, pdfDelegate) {
 
   $scope.$watch(

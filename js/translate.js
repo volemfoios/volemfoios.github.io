@@ -23,7 +23,15 @@ angular.module('myApp')
     ESTOS_CANDIDATOS: 'Estos son los y las candidatas elegidos en las primarias abiertas para el ayuntamiento de Foios',
     PROGRAMA_ELECTORAL: 'Programa participativo',
     PROXIMAMENTE: 'Próximamente...',
-    COMPROMISOS_ADQUIRIDOS: 'Compromisos'
+    COMPROMISOS_ADQUIRIDOS: 'Compromisos',
+    DOCUMENTOS: 'DOCUMENTOS',
+    DOCUMENTOS_LOW: 'Documentos',
+    ABRIR: 'Abrir',
+    NOMBRE_LOW: 'Nombre',
+    ENLACE_LOW: 'Enlace',
+    PROGRAMA_GOBIERNO: 'Programa de gobierno',
+    GASTOS: 'Gastos',
+    GASTOS_EXCEL: 'Gastos excel'
   });
   $translateProvider.translations('va', {
     BIENVENIDO: 'BENVINGUTS/DES',
@@ -48,7 +56,15 @@ angular.module('myApp')
     ESTOS_CANDIDATOS: 'Estos són els i les candidates triades en primàries obertes per a l\'ajuntament de Foios',
     PROGRAMA_ELECTORAL: 'Programa participatiu',
     PROXIMAMENTE: 'Pròximament...',
-    COMPROMISOS_ADQUIRIDOS: 'Compromisos'
+    COMPROMISOS_ADQUIRIDOS: 'Compromisos',
+    DOCUMENTOS: 'DOCUMENTS',
+    DOCUMENTOS_LOW: 'Documents',
+    ABRIR: 'Obrir',
+    NOMBRE_LOW: 'Nom',
+    ENLACE_LOW: 'Enllaç',
+    PROGRAMA_GOBIERNO: 'Programa de Govern',
+    GASTOS: 'Despeses',
+    GASTOS_EXCEL: 'Despeses excel'
   });
   $translateProvider.preferredLanguage('es');
 });

@@ -1,0 +1,28 @@
+<div class="page-header">
+  <h1>{{'DOCUMENTOS_LOW' | translate}}</h1>
+</div>
+<div class="row" ng-controller="DocumentosController">
+  <div class="panel">
+    <table class="table table-stripped ">
+      <thead>
+        <tr>
+          <th>{{'NOMBRE_LOW' | translate}}</th><th>{{'ENLACE_LOW' | translate}}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>{{'PROGRAMA_GOBIERNO' | translate}}</td>
+          <td ng-show="language == 'es'"><a href="/docs/programa_gobierno_es.pdf" class="btn btn-default pull-right" target="_blank"><span class="glyphicon glyphicon-cloud-download"></span> {{'ABRIR' | translate}}</a></td>
+          <td ng-show="language == 'va'"><a href="/docs/programa_gobierno_va.pdf" class="btn btn-default pull-right" target="_blank"><span class="glyphicon glyphicon-cloud-download"></span> {{'ABRIR' | translate}}</a></td>
+        </tr>
+        <tr>
+          <td>{{'GASTOS' | translate}}</td>
+          <td><a href="/docs/contabilidad.pdf" class="btn btn-default pull-right" target="_blank"><span class="glyphicon glyphicon-cloud-download"></span> {{'ABRIR' | translate}}</a></td>
+        <tr>
+          <td>{{'GASTOS_EXCEL' | translate}}</td>
+          <td><a href="/docs/contabilidad.xlsx" class="btn btn-default pull-right" target="_blank"><span class="glyphicon glyphicon-cloud-download"></span> {{'ABRIR' | translate}}</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

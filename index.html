@@ -34,15 +34,15 @@
       </div>
       <div id="navbar" class="navbar-collapse" ng-class="{collapse: isCollapsed}" ng-cloak>
         <ul class="nav navbar-nav">
-          <!--<li ng-class="{ active: isActive('/')}" ng-click="isCollapsed = !isCollapsed"><a href="#/bienvenido">{{'BIENVENIDO' | translate}}</a></li>-->
-          <li class="dropdown" ng-class="{ active: isActive('/programa') || isActive('/compromisos')}">
+          <li class="dropdown" ng-class="{ active: isActive('/programa') || isActive('/compromisos') || isActive('/candidatos')}">
             <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" >{{'PROGRAMA' | translate}} <span class="caret"></span></a>
             <ul class="dropdown-menu" role="menu">
               <li ng-class="{ active: isActive('/programa')}" ng-click="isCollapsed = !isCollapsed" ><a href="#/programa">{{'PROGRAMA_CIUDADANO' | translate}}</a></li>
               <li ng-class="{ active: isActive('/compromisos')}" ng-click="isCollapsed = !isCollapsed"><a href="#/compromisos">{{'COMPROMISOS' | translate}}</a></li>
+              <li ng-class="{ active: isActive('/quienes')}" ng-click="isCollapsed = !isCollapsed"><a href="#/quienes">{{'CANDIDATOS' | translate}}</a></li>
             </ul>
           </li>
-          <li ng-class="{ active: isActive('/quienes')}" ng-click="isCollapsed = !isCollapsed"><a href="#/quienes">{{'CANDIDATOS' | translate}}</a></li>
+          <li ng-class="{ active: isActive('/documentos')}" ng-click="isCollapsed = !isCollapsed"><a href="#/documentos">{{'DOCUMENTOS' | translate}}</a></li>
           <li ng-class="{ active: isActive('/multimedia')}" ng-click="isCollapsed = !isCollapsed"><a href="#/multimedia">{{'MULTIMEDIA' | translate}}</a></li>
           <li ng-class="{ active: isActive('/contacto')}" ng-click="isCollapsed = !isCollapsed"><a href="#/contacto">{{'CONTACTO' | translate}}</a></li>
         </ul>
